@@ -10,11 +10,14 @@ Drivers https://drive.google.com/drive/folders/1UEJ5dpz5uUUD7EmwyQvAq5wRPA8VJXtA
 tar -zxvf Codensity_T4XX_Software_Release_V3.1.0.tar.gz
 cd ~/ && git clone https://github.com/livepeer/go-livepeer.git livepeer-netint && cd livepeer-netint
 git checkout f66717fc7aeca11579aac04e6f09ab735711f770
+#NOTE: This is a clean patch of 4.4 which is missing livepeer signature functions...
 ```
+
+
 #### Clean and Copy libxcoder to the proper output folder
 ```
 export ROOT=~/buildoutput
-rm -rf $ROOT # Clean build if you are repeating these steps
+rm -rf $ROOT
 mkdir $ROOT && cp -r ~/release/libxcoder_logan $ROOT/libxcoder_logan
 ```
 
