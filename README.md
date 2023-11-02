@@ -16,7 +16,7 @@ export PATH=$PATH:/usr/local/cuda/bin
 ./install_ffmpeg.sh
 ```
 
-#### sample launch.json config for debugging with visual studio code
+#### Sample launch.json config for debugging with visual studio code
 The `PKG_CONFIG_PATH` and `LD_LIBRARY_PATH` must be full paths, they cannot reference home like `~/`
 ```
         {
