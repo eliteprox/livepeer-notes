@@ -81,7 +81,17 @@ ffmpeg -y -c:v h264_ni_logan_dec -i bbb.mp4 -c:v  h265_ni_logan_enc bbb_265_ni.m
 Run and test
 `./livepeer_bench  -in bbb/source.m3u8 -transcodingOptions P240p30fps16x9 -concurrentSessions 5 -outPrefix /tmp/ -netint all`
 
+### ffmpeg dev notes
+Get information about the encoder/decoder supported parameters
 
-Notes from the ffmpeg build
-configure: WARNING: No asciidoc package found
-configure: WARNING: No xmlto package found
+x264
+```
+ffmpeg -help encoder=h264_ni_logan_en
+ffmpeg -help decoder=h264_ni_logan_dec
+```
+
+x265
+```
+ffmpeg -help encoder=h265_ni_logan_en
+ffmpeg -help decoder=h265_ni_logan_dec
+```
