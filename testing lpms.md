@@ -20,7 +20,8 @@ The following `launch.json` can be used with LPMS to develop/debug libxcoder fla
             "args":[
                 "transcoder/test.ts",
                 "P144p30fps16x9,P240p30fps16x9",
-                "nt 0"
+                "nt",
+                "0"
             ]
         }
     ]
