@@ -1,6 +1,6 @@
 # Running Catalyst Box as Server
 
-Since livepeer-in-a-box is initially configured to work only from `localhost`, the following notes describe how to configure it successfully configure it to be deployed to a server. 
+Since livepeer-in-a-box is initially configured to work only from `localhost`, the following notes describe how to configure it to be deployed to a server. 
 1. Create a development folder  `mkdir ~\catalyt-dev`
 2. Follow the steps outlined here: https://catalyst-docs.iame.li/catalyst/developing-with-catalyst
 3. Follow these steps to create a self-signed certificate and reverse proxy to http port 8888. https://www.digitalocean.com/community/tutorials/how-to-create-a-self-signed-ssl-certificate-for-nginx-in-ubuntu-16-04#step-2-configure-nginx-to-use-ssl
