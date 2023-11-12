@@ -30,7 +30,11 @@ server {
    -  Modify `ingest`, change every instance of `localhost` to your server domain or IP. Change `http` to `https` also and remove `:8888` where found. 
 6.  Under the `livepeer-catalyst-api` connector, modify the following settings:
    -  Modify `tags` from `http://localhost:8888` to `https://serveripordomain`
-7. Stop the docker instance and re-run `make box-dev` to reload livepeer api with the new configuration. 
+7. Stop the docker instance and re-run `make box-dev` to reload livepeer api with the new configuration.
+
+Known issue: 
+- The preview player and share button link point to https://lvpr.tv?v=29282syji2nx5l0z, but the streams are not available there of course. This will require a slight change within livepeer studio.
+- TBD as testing is completed on other features
 
 ## TODO:  Configuring livepeer-in-a-box to connect to the livepeer network! (Real orchestrators)
 
