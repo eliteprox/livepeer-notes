@@ -17,4 +17,5 @@ In summary,
    -  Add your server's IP or domain to `cors-jwt-allowlist`, example: `\"https://192.168.10.61\"`. Be mindful of the escape characters, they are required.
    -  Modify `ingest`, change every instance of `localhost` to your server domain or IP. Change `http` to `https` also. 
 6.  Under the `livepeer-catalyst-api` connector, modify the following settings:
-   -  Modify `tags` from `http://localhost` to `https://serveripordomain`
+   -  Modify `tags` from `http://localhost:8888` to `https://serveripordomain`
+7.  
