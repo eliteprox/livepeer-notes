@@ -30,7 +30,4 @@ server {
    -  Modify `ingest`, change every instance of `localhost` to your server domain or IP. Change `http` to `https` also and remove `:8888` where found. 
 6.  Under the `livepeer-catalyst-api` connector, modify the following settings:
    -  Modify `tags` from `http://localhost:8888` to `https://serveripordomain`
-7.  
-
-
-Stop the docker instance and re-run `make box-dev` to reload livepeer api with the new configuration. 
+7. Stop the docker instance and re-run `make box-dev` to reload livepeer api with the new configuration. 
