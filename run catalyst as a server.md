@@ -28,11 +28,19 @@ server {
 5. Under the `livepeer-api` connector, modify the following settings:
    -  Add your server's IP or domain to `cors-jwt-allowlist`, example: `\"https://192.168.10.61\"`. Be mindful of the escape characters, they are required.
    -  Modify `ingest`, change every instance of `localhost` to your server domain or IP. Change `http` to `https` also and remove `:8888` where found. 
-6.  Under the `livepeer-catalyst-api` connector, modify the following settings:
+6. Under the `livepeer-catalyst-api` connector, modify the following settings:
    -  Modify `tags` from `http://localhost:8888` to `https://serveripordomain`
 7. Stop the docker instance and re-run `make box-dev` to reload livepeer api with the new configuration.
 
-Known issue: 
+# Compiling your own docker image for deployment
+Once you have completed development, you can package your node into a docker image for production deployment
+
+`TBD`
+
+
+
+
+Known issues: 
 - The preview player and share button link point to https://lvpr.tv?v=29282syji2nx5l0z, but the streams are not available there of course. This will require a slight change within livepeer studio.
 - TBD as testing is completed on other features
 
