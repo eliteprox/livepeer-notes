@@ -31,3 +31,7 @@ server {
 6.  Under the `livepeer-catalyst-api` connector, modify the following settings:
    -  Modify `tags` from `http://localhost:8888` to `https://serveripordomain`
 7. Stop the docker instance and re-run `make box-dev` to reload livepeer api with the new configuration. 
+
+## TODO:  Configuring livepeer-in-a-box to connect to the livepeer network! (Real orchestrators)
+
+
