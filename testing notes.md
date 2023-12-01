@@ -10,8 +10,12 @@
         "CGO_ENABLED": "1",
         "CC": "",
         "CGO_LDFLAGS": "-L/usr/local/cuda/lib64 -L/home/elite/compiled/lib",
-        "PATH": "/usr/local/cuda/bin:${PATH}", 
+        "PATH": "/usr/local/cuda/bin:/usr/bin/:${PATH}", 
         "PKG_CONFIG_PATH":"/home/elite/compiled/lib/pkgconfig", 
         "LD_LIBRARY_PATH":"/home/elite/compiled/lib"
     }
 ```
+If you are missing gcc compiler, you can install it with 
+`sudo apt install gcc`
+
+In case of any other missing path entries, append those with `:` above.
