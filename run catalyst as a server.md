@@ -33,11 +33,8 @@ server {
    - Modify `tags` from `http://localhost:8888` to `https://serveripordomain`
 7. Stop the docker instance and re-run `make box-dev` to reload livepeer api with the new configuration.
 
-# Compiling your own docker image for deployment
-Once you have completed development, you can package your node into a docker image for production deployment
-
-`TBD`
-
+# Running the docker image
+When running in a container, the path for the config file is on the host machine at `/etc/livepeer/full-stack.json`
 
 
 
