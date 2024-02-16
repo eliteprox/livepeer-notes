@@ -46,8 +46,3 @@ The `PKG_CONFIG_PATH` and `LD_LIBRARY_PATH` must be full paths, they cannot refe
             ],
         },
 ```
-
-#### go mod replace trick
-Useful when you need local system to map to a forked go module
-
-`go mod edit -replace="github.com/livepeer/lpms@v0.0.0-20231002131146-663c62246a3c=github.com/eliteprox/lpms@v0.0.0-20231002131146-663c62246a3c"`
